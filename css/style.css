@@ -1,0 +1,247 @@
+/* *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  background: #212523;
+}
+
+form{
+  background: rgba(27,31,34);
+  width: 640px;
+  margin: 65px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+
+form h2{
+  letter-spacing: 5px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+form .half{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .item input{
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full{
+  margin-bottom: 24px;
+}
+
+form .action input{
+  background: white;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 13px;
+  height: 44px;
+  letter-spacing: 3px;
+  padding: 0 20px 0 22px;
+}
+
+form .item input:focus{
+  background: rgba(255,255,255,0.075);
+}
+
+@media (max-width: 480px){
+  form .half{
+    flex-direction: column;
+  }
+  form .half .item, form .action input{
+    width: 100%;
+  }
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu&display=swap');
+
+/* new style chat gpt */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+label {
+  font-family: 'Nunito', sans-serif;
+  font-size: small;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+#year {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+legend {
+  margin: 0 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 7px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  /* margin-bottom: 2px; */
+}
+
+.half {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half .item {
+  width: 50%;
+  padding: 0 16px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.full .item {
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.action{
+  display: flex;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+footer p {
+  position: relative;
+  top: 40%;
+}
+
+/* Style for phones */
+@media screen and (max-width: 480px) {
+
+  /* Make the form full-width */
+  .container {
+    width: 96%;
+    padding: 0;
+  }
+
+  /* Adjust the font sizes */
+  label,
+  input,
+  button {
+    font-size: 14px;
+  }
+
+  /* Adjust the input fields */
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  input[type=file] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #year {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust the action button */
+  .action {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .half .item {
+    width: 100%;
+  }
+
+  footer {
+    height: 10%;
+    margin-top: 42px;
+    font-size: medium;
+
+  }
+
+}
